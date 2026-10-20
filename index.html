@@ -1,0 +1,380 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shopomart | Everyday Shopping</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">Shopomarts</div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="cart">🛒 Cart (0)</div>
+    </header>
+    
+<!-- Shopping Cart Side Panel -->
+<div class="cart-overlay" id="cartOverlay"></div>
+
+<aside class="cart-panel" id="cartPanel">
+    <div class="cart-header">
+        <h2>Your Shopping Cart</h2>
+        <button type="button" id="closeCart" aria-label="Close cart">
+            &times;
+        </button>
+    </div>
+
+    <div id="cartItems" class="cart-items">
+        <p class="empty-cart">Your cart is empty.</p>
+    </div>
+
+    <div class="cart-footer">
+        <div class="cart-total">
+            <span>Total</span>
+            <strong id="cartTotal">Rs. 0</strong>
+        </div>
+
+        <button type="button" id="checkoutButton" class="checkout-button">
+            Proceed to Checkout
+        </button>
+    </div>
+</aside>
+<section class="hero hero-carousel">
+
+    <div class="hero-slides">
+
+        <div class="hero-slide active">
+            <img src="images/shopomart-hero.png"
+                 alt="Shopomart shopping"
+                 class="hero-slide-image">
+
+            <div class="hero-content">
+                <span class="hero-label">STYLE YOUR EVERYDAY</span>
+                <h1>Discover Something You'll Love</h1>
+                <p class="hero-description">
+                    Explore fashion, accessories, and everyday essentials
+                    chosen for your lifestyle.
+                </p>
+                <a href="portfolio.html" class="shop-button">
+                    Discover Products
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-slide">
+            <img src="images/shopomart-hero-2.png"
+                 alt="Shopomart everyday shopping"
+                 class="hero-slide-image">
+
+            <div class="hero-content">
+                <span class="hero-label">EVERYDAY ESSENTIALS</span>
+                <h1>Everything You Need, In One Place</h1>
+                <p class="hero-description">
+                    Find useful products for your home and daily life.
+                </p>
+                <a href="portfolio.html" class="shop-button">
+                    Explore Products
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-slide">
+            <img src="images/shopomart-hero-3.png"
+                 alt="Shopomart product collection"
+                 class="hero-slide-image">
+
+            <div class="hero-content">
+                <span class="hero-label">SMARTER SHOPPING</span>
+                <h1>Make Every Day Better</h1>
+                <p class="hero-description">
+                    Discover products that fit your needs and style.
+                </p>
+                <a href="portfolio.html" class="shop-button">
+                    Start Exploring
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Product Categories -->
+<section class="categories" id="categories">
+
+    <div class="section-heading">
+        <h1>SHOP BY CATEGORY</h1>
+        <h2>Explore Our Product Categories</h2>
+        <p>Find everything you need, all in one place.</p>
+    </div>
+
+    <div class="category-container">
+
+        <!-- Groceries Card -->
+        <div class="category-card">
+            <div class="category-image category-carousel">
+
+                <img src="images/groceries.png"
+                     alt="Fresh groceries including fruits and vegetables"
+                     class="carousel-image active">
+
+                <img src="images/groceries-2.png"
+                     alt="More fresh grocery products"
+                     class="carousel-image">
+
+                <div class="carousel-dots">
+                    <button class="carousel-dot active"
+                            type="button"
+                            aria-label="Show first grocery image"></button>
+                    <button class="carousel-dot"
+                            type="button"
+                            aria-label="Show second grocery image"></button>
+                </div>
+            </div>
+
+            <div class="category-content">
+                <h3>Groceries</h3>
+                <p>Fresh picks for your everyday needs.</p>
+                <a href="portfolio.html" class="category-button">
+                    Shop Now <span aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Electronics Card -->
+        <div class="category-card">
+            <div class="category-image category-carousel">
+
+                <img src="images/electronics.png"
+                     alt="Modern electronic gadgets and accessories"
+                     class="carousel-image active">
+
+                <img src="images/electronics-2.png"
+                     alt="More electronic gadgets"
+                     class="carousel-image">
+
+                <div class="carousel-dots">
+                    <button class="carousel-dot active"
+                            type="button"
+                            aria-label="Show first electronics image"></button>
+                    <button class="carousel-dot"
+                            type="button"
+                            aria-label="Show second electronics image"></button>
+                </div>
+            </div>
+
+            <div class="category-content">
+                <h3>Electronics</h3>
+                <p>Discover gadgets for everyday life.</p>
+                <a href="portfolio.html" class="category-button">
+                    Shop Now <span aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Fashion Card -->
+        <div class="category-card">
+            <div class="category-image category-carousel">
+
+                <img src="images/fashion.png"
+                     alt="Fashion clothing, shoes and accessories"
+                     class="carousel-image active">
+
+                <img src="images/fashion-2.png"
+                     alt="More fashionable clothing and accessories"
+                     class="carousel-image">
+
+                <div class="carousel-dots">
+                    <button class="carousel-dot active"
+                            type="button"
+                            aria-label="Show first fashion image"></button>
+                    <button class="carousel-dot"
+                            type="button"
+                            aria-label="Show second fashion image"></button>
+                </div>
+            </div>
+
+            <div class="category-content">
+                <h3>Fashion</h3>
+                <p>Find your style for every occasion.</p>
+                <a href="portfolio.html" class="category-button">
+                    Shop Now <span aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Home Essentials Card -->
+        <div class="category-card">
+            <div class="category-image category-carousel">
+
+                <img src="images/home-essentials.png"
+                     alt="Home decor and everyday household essentials"
+                     class="carousel-image active">
+
+                <img src="images/home-essentials-2.png"
+                     alt="More home decor and household products"
+                     class="carousel-image">
+
+                <div class="carousel-dots">
+                    <button class="carousel-dot active"
+                            type="button"
+                            aria-label="Show first home essentials image"></button>
+                    <button class="carousel-dot"
+                            type="button"
+                            aria-label="Show second home essentials image"></button>
+                </div>
+            </div>
+
+            <div class="category-content">
+                <h3>Home Essentials</h3>
+                <p>Make your home feel comfortable.</p>
+                <a href="portfolio.html" class="category-button">
+                    Shop Now <span aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- TWO-COLUMN SHOPOMART SECTION -->
+<section class="shopomart-story">
+    <div class="story-image">
+        <img
+            src="images/shopomart-hero.png"
+            alt="Explore everyday shopping at Shopomart"
+        >
+        <div class="story-image-label">EVERYDAY SHOPPING, MADE SIMPLE</div>
+    </div>
+
+    <div class="story-content">
+        <h1>Welcome to Shopomarts</h1>
+        <h2>Your Everyday Needs, All in One Place</h2>
+        <p>
+            From fashion and electronics to groceries and home essentials,
+            discover products for your everyday lifestyle in one convenient place.
+        </p>
+
+        <div class="story-benefits">
+            <div>
+                <span class="benefit-icon">✦</span>
+                <div>
+                    <h3>Explore More</h3>
+                    <p>Discover products across different categories.</p>
+                </div>
+            </div>
+
+            <div>
+                <span class="benefit-icon">♡</span>
+                <div>
+                    <h3>Shop Your Way</h3>
+                    <p>Find items that match your needs and style.</p>
+                </div>
+            </div>
+        </div>
+
+        <a href="about.html" class="story-button">Discover Our Story →</a>
+    </div>
+</section>
+
+<!-- SHOPOMART COUNTERS SECTION -->
+<section class="shopomart-stats">
+    <div class="stats-heading">
+        <span class="story-tag">SHOPOMARTS AT A GLANCE</span>
+        <h2>Shopping Made Simple</h2>
+        <p>Discover everyday essentials across your favourite categories.</p>
+    </div>
+
+    <div class="stats-grid">
+        <div class="stat-card">
+            <span class="stat-icon">▦</span>
+            <h3><span class="counter" data-target="4">100</span>+</h3>
+            <p>Shopping Categories</p>
+        </div>
+
+        <div class="stat-card">
+            <span class="stat-icon">♡</span>
+            <h3><span class="counter" data-target="8">10</span><span>+</span></h3>
+            <p>Demo Products</p>
+        </div>
+
+        <div class="stat-card">
+            <span class="stat-icon">✓</span>
+            <h3><span class="counter" data-target="100">100</span><span>%</span></h3>
+            <p>Online Convenience</p>
+        </div>
+
+        <div class="stat-card">
+            <span class="stat-icon">◷</span>
+            <h3><span class="counter" data-target="24">0</span><span>/7</span></h3>
+            <p>Browse Anytime</p>
+        </div>
+    </div>
+
+    <p class="stats-note">
+        *Figures describe the current demo website, not verified sales or customer statistics.
+    </p>
+</section>
+
+
+<script src="script.js"></script>
+
+<!-- SHOPOMART FOOTER -->
+<footer class="site-footer">
+    <div class="footer-main">
+        <div class="footer-brand">
+            <a href="index.html" class="footer-logo">Shopomarts<span>.</span></a>
+            <p>
+                Your everyday shopping destination for fashion,
+                electronics, groceries and home essentials.
+            </p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Our Services</a>
+            <a href="portfolio.html">Products</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+        <div class="footer-links">
+            <h3>Explore</h3>
+            <a href="portfolio.html">Groceries</a>
+            <a href="portfolio.html">Electronics</a>
+            <a href="portfolio.html">Fashion</a>
+            <a href="portfolio.html">Home Essentials</a>
+        </div>
+
+        <div class="footer-contact">
+            <h3>Get in Touch</h3>
+            <p>Have a question about our demo store?</p>
+            <a href="contact.html" class="footer-contact-button">Contact Us →</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© <span id="footerYear">2026</span> Shopomart. All rights reserved.</p>
+        <a href="index.html">Back to Home ↑</a>
+    </div>
+</footer>
+
+</body>
+</html>
+
+

@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shopomart | Products</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">Shopomarts</div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="cart">🛒 Cart (0)</div>
+    </header>
+    
+<!-- Shopping Cart Side Panel -->
+<div class="cart-overlay" id="cartOverlay"></div>
+
+<aside class="cart-panel" id="cartPanel">
+    <div class="cart-header">
+        <h2>Your Shopping Cart</h2>
+        <button type="button" id="closeCart" aria-label="Close cart">
+            &times;
+        </button>
+    </div>
+
+    <div id="cartItems" class="cart-items">
+        <p class="empty-cart">Your cart is empty.</p>
+    </div>
+
+    <div class="cart-footer">
+        <div class="cart-total">
+            <span>Total</span>
+            <strong id="cartTotal">Rs. 0</strong>
+        </div>
+
+        <button type="button" id="checkoutButton" class="checkout-button">
+            Proceed to Checkout
+        </button>
+    </div>
+</aside>
+
+
+    <main class="products-page">
+
+        <section class="products-banner">
+            <p>WELCOME TO SHOPOMARTS</p>
+            <h1>Discover Our Products</h1>
+            <p>
+                Explore everyday essentials, the latest gadgets,
+                fashion favourites and more.
+            </p>
+        </section>
+
+        <section class="products-section">
+
+            <div class="products-heading">
+                <h2>Our Featured Collection</h2>
+                <p>Find something special for your everyday needs.</p>
+            </div>
+
+            <div class="products-grid">
+
+                <!-- Product 1: Fresh Avocado -->
+                <article class="product-card">
+                    <div class="product-visual">
+                        <img
+                      src="images/avocado.jpg.jfif"
+                      alt="Fresh Avocado"
+>
+                    </div>
+
+                    <div class="product-info">
+                        <p class="product-category">Groceries</p>
+                        <h3>Fresh Avocado</h3>
+                        <p class="product-price">Rs. 350</p>
+
+                        <button class="product-button" type="button">
+                            Add to Cart
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Product 2: Wireless Headphones -->
+                <article class="product-card">
+                    <div class="product-visual">
+                        <img
+                            src="images/headphones.jpg"
+                            alt="Wireless Headphones"
+                        >
+                    </div>
+
+                    <div class="product-info">
+                        <p class="product-category">Electronics</p>
+                        <h3>Wireless Headphones</h3>
+                        <p class="product-price">Rs. 2,500</p>
+
+                        <button class="product-button" type="button">
+                            Add to Cart
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Product 3: Casual Sneakers -->
+                <article class="product-card">
+                    <div class="product-visual">
+                        <img
+                            src="images/sneakers.jpg"
+                            alt="Casual Sneakers"
+                        >
+                    </div>
+
+                    <div class="product-info">
+                        <p class="product-category">Fashion</p>
+                        <h3>Casual Sneakers</h3>
+                        <p class="product-price">Rs. 3,200</p>
+
+                        <button class="product-button" type="button">
+                            Add to Cart
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Product 4: Decorative Plant -->
+                <article class="product-card">
+                    <div class="product-visual">
+                        <img
+                            src="images/plant.jpg"
+                            alt="Decorative Plant"
+                        >
+                    </div>
+
+                    <div class="product-info">
+                        <p class="product-category">Home Essentials</p>
+                        <h3>Decorative Plant</h3>
+                        <p class="product-price">Rs. 850</p>
+
+                        <button class="product-button" type="button">
+                            Add to Cart
+                        </button>
+                    </div>
+                </article>
+            
+<!-- Product 5: Fresh Groceries -->
+<article class="product-card">
+    <div class="product-visual">
+        <img src="images/groceries.png" alt="Fresh Groceries">
+    </div>
+    <div class="product-info">
+        <p class="product-category">Groceries</p>
+        <h3>Fresh Vegetable Basket</h3>
+        <p class="product-price">Rs. 650</p>
+        <button class="product-button" type="button">Add to Cart</button>
+    </div>
+</article>
+
+<!-- Product 6: Smart Electronics -->
+<article class="product-card">
+    <div class="product-visual">
+        <img src="images/electronics.png" alt="Smart Electronics">
+    </div>
+    <div class="product-info">
+        <p class="product-category">Electronics</p>
+        <h3>Latest Tech Gadget</h3>
+        <p class="product-price">Rs. 4,500</p>
+        <button class="product-button" type="button">Add to Cart</button>
+    </div>
+</article>
+
+<!-- Product 7: Fashion Collection -->
+<article class="product-card">
+    <div class="product-visual">
+        <img src="images/fashion.png" alt="Fashion Collection">
+    </div>
+    <div class="product-info">
+        <p class="product-category">Fashion</p>
+        <h3>Everyday Fashion</h3>
+        <p class="product-price">Rs. 2,800</p>
+        <button class="product-button" type="button">Add to Cart</button>
+    </div>
+</article>
+
+<!-- Product 8: Home Essentials -->
+<article class="product-card">
+    <div class="product-visual">
+        <img src="images/home-essentials.png" alt="Home Essentials">
+    </div>
+    <div class="product-info">
+        <p class="product-category">Home Essentials</p>
+        <h3>Home Decor Collection</h3>
+        <p class="product-price">Rs. 1,500</p>
+        <button class="product-button" type="button">Add to Cart</button>
+    </div>
+</article>
+
+        </section>
+
+    </main>
+
+     <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-main">
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">Shopomarts<span>.</span></a>
+                <p>
+                    Your everyday shopping destination for fashion,
+                    electronics, groceries and home essentials.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Our Services</a>
+                <a href="portfolio.html">Products</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+
+            <div class="footer-links">
+                <h3>Explore</h3>
+                <a href="portfolio.html">Groceries</a>
+                <a href="portfolio.html">Electronics</a>
+                <a href="portfolio.html">Fashion</a>
+                <a href="portfolio.html">Home Essentials</a>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Get in Touch</h3>
+                <p>Have a question about our demo store?</p>
+                <a href="contact.html" class="footer-contact-button">Contact Us →</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© <span id="footerYear">2026</span> Shopomarts. All rights reserved.</p>
+            <a href="index.html">Back to Home ↑</a>
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
